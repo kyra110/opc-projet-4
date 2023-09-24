@@ -2,11 +2,11 @@
 /****Fonts*****/
 @font-face {
   font-family: roboto;
-  src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: shrikhand;
-  src: url("/assets/fonts/shrinkhand/Shrikhand-Regular.ttf");
+  src: url("../assets/fonts/shrinkhand/Shrikhand-Regular.ttf");
 }
 /********mixins*******/
 /********Composants*********/
@@ -95,7 +95,9 @@ header .header__gps-container {
   flex-direction: column;
   gap: 15px;
 }
-.fonctionement .fonctionement__choix-container .fonctionement__choix-container__composant {
+.fonctionement
+  .fonctionement__choix-container
+  .fonctionement__choix-container__composant {
   position: relative;
   display: flex;
   align-items: center;
@@ -124,7 +126,9 @@ header .header__gps-container {
   font-weight: 900;
   margin-left: 20px;
 }
-.fonctionement .fonctionement__choix-container .fa-solid.fa-mobile-screen-button {
+.fonctionement
+  .fonctionement__choix-container
+  .fa-solid.fa-mobile-screen-button {
   color: #7e7e7e;
 }
 .fonctionement .fonctionement__choix-container .fa-solid.fa-list {
@@ -159,7 +163,7 @@ header .header__gps-container {
 .restaurants .restaurants__card img {
   height: 75%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .restaurants .restaurants__card .restaurants__card__content {
   display: flex;
@@ -181,7 +185,10 @@ header .header__gps-container {
   font-family: roboto, sans-serif;
   font-weight: 300;
 }
-.restaurants .restaurants__card .restaurants__card__content .restaurants__card__content__heart {
+.restaurants
+  .restaurants__card
+  .restaurants__card__content
+  .restaurants__card__content__heart {
   height: 100%;
 }
 
@@ -214,4 +221,4 @@ footer .footer__content a .fa-utensils {
 footer .footer__content a .fa-handshake {
   margin-right: 5px;
   rotate: 325deg;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
