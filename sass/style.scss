@@ -1,0 +1,223 @@
+/*******Variables********/
+$header-background: #eaeaea;
+$primary-background: #f6f6f6;
+$segondary-background: #ffffff;
+$button-background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+$color-elipse: #9356dc;
+$footer-background: #353535;
+/****Fonts*****/
+@font-face {
+  font-family: roboto;
+  src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: shrikhand;
+  src: url("/assets/fonts/shrinkhand/Shrikhand-Regular.ttf");
+}
+/********mixins*******/
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+@mixin shadow {
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.493);
+}
+@mixin h2-section {
+  font-family: roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+/********Composants*********/
+
+/*boutons*/
+.button-CTA {
+  background: $button-background;
+  color: white;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  border-radius: 25px;
+  padding: 15px 20px;
+  border: none;
+  margin-bottom: 60px;
+  @include shadow();
+}
+/*********resets******/
+body {
+  margin: 0;
+}
+/*********Header*********/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .header__logo {
+    @include flex-center();
+    padding: 15px;
+    img {
+      width: 50%;
+    }
+  }
+  .header__gps-container {
+    @include flex-center();
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: $header-background;
+    font-family: roboto, sans-serif;
+  }
+}
+/******section reservation*******/
+.reservation {
+  background-color: $primary-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  h2 {
+    padding: 40px 55px 0px 55px;
+    text-align: center;
+    margin: 0;
+    @include h2-section();
+  }
+  p {
+    margin: 0;
+    padding: 0 30px;
+    text-align: center;
+    color: #353535;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 300;
+  }
+}
+/******section fonctionement*******/
+.fonctionement {
+  padding: 20px;
+  margin-bottom: 40px;
+  h2 {
+    @include h2-section();
+  }
+  .fonctionement__choix-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .fonctionement__choix-container__composant {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: roboto, sans-serif;
+      background: $primary-background;
+      border-radius: 20px;
+      @include shadow();
+    }
+    span {
+      position: absolute;
+      top: 20px;
+      left: -10px;
+      display: flex;
+      height: 20px;
+      width: 20px;
+      background: $color-elipse;
+      border-radius: 200px;
+      color: #f6f6f6;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.7rem;
+      font-family: "roboto";
+    }
+    .fa-solid {
+      font-weight: 900;
+      margin-left: 20px;
+      &.fa-mobile-screen-button {
+        color: #7e7e7e;
+      }
+      &.fa-list {
+        color: #7e7e7e;
+      }
+      &.fa-store {
+        color: $color-elipse;
+      }
+    }
+  }
+}
+/****section restaurants****/
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: $primary-background;
+  padding: 50px 20px;
+  h2 {
+    @include h2-section();
+    margin: 0;
+  }
+  .restaurants__card {
+    overflow: hidden;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: $segondary-background;
+    img {
+      height: 75%;
+      object-fit: cover;
+    }
+    .restaurants__card__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 25%;
+      padding: 10px;
+      h3 {
+        font-size: 18px;
+        font-family: roboto, sans-serif;
+        font-weight: 700;
+        margin: 0;
+      }
+      p {
+        margin: 0;
+        font-size: 17px;
+        font-family: roboto, sans-serif;
+        font-weight: 300;
+      }
+      .restaurants__card__content__heart {
+        height: 100%;
+      }
+    }
+  }
+}
+/*********footer**************/
+footer {
+  background: $footer-background;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  .footer__logo {
+    h2 {
+      color: white;
+      font-size: 18px;
+      font-family: shrikhand, sans-serif;
+      font-weight: 300;
+      margin: 0 0 10px;
+    }
+  }
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    a {
+      color: $segondary-background;
+      text-decoration: none;
+      .fa-utensils {
+        margin-right: 10px;
+      }
+      .fa-handshake {
+        margin-right: 5px;
+        rotate: 325deg;
+      }
+    }
+  }
+}

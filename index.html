@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ohmyfood</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./sass/style.css">
   <script src="https://kit.fontawesome.com/ea69997875.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
-    <div class="header__title-container">
-      <h1>ohmyfood</h1>
+    <div class="header__logo">
+      <img src="./assets/images/logo/ohmyfood.png" alt="Logo de ohmyfood">
     </div>
     <div class="header__gps-container">
       <i class="fa-solid fa-location-dot"></i>
@@ -21,22 +21,25 @@
   </header>
   <main>
     <section class="reservation">
-      <h2>Réserver le menu qui vous convient</h2>
+      <h2>Réservez le menu qui vous convient</h2>
       <p>Découvrez des restaurants d'éxeption, sélectionés par nos soins</p>
-      <button>Explorer nos restaurants</button>
+      <button class="button-CTA">Explorer nos restaurants</button>
     </section>
     <section class="fonctionement">
       <h2>Fonctionement</h2>
       <div class="fonctionement__choix-container">
         <div class="fonctionement__choix-container__composant">
+          <span>1</span>
           <i class="fa-solid fa-mobile-screen-button"></i>
           <h3>Choisissez un restaurant</h3>
         </div>
         <div class="fonctionement__choix-container__composant">
+          <span>1</span>
           <i class="fa-solid fa-list"></i>
           <h3>Composez votre menu</h3>
         </div>
         <div class="fonctionement__choix-container__composant">
+          <span>1</span>
           <i class="fa-solid fa-store"></i>
           <h3>Dégustez au restaurant</h3>
         </div>
@@ -45,7 +48,7 @@
     <section class="restaurants">
       <h2>Restaurants</h2>
       <div class="restaurants__card">
-        <img src="#" alt="Photo d'une table de restaurant">
+        <img src="./assets/images/restaurants/la-palette-du-goût.jpg" alt="Photo d'une table de restaurant">
         <div class="restaurants__card__content">
           <div class="restaurants__card__content__text">
             <h3>La palette du goût</h3>
@@ -57,7 +60,7 @@
         </div>
       </div>
       <div class="restaurants__card">
-        <img src="#" alt="Photo d'une table de restaurant">
+        <img src="./assets/images/restaurants/La-note-enchantée.jpg" alt="Photo d'une table de restaurant">
         <div class="restaurants__card__content">
           <div class="restaurants__card__content__text">
             <h3>La note enchantée</h3>
@@ -69,7 +72,7 @@
         </div>
       </div>
       <div class="restaurants__card">
-        <img src="#" alt="Photo d'une table de restaurant">
+        <img src="./assets/images/restaurants/A-la-française.jpg" alt="Photo d'une table de restaurant">
         <div class="restaurants__card__content">
           <div class="restaurants__card__content__text">
             <h3>A la française</h3>
@@ -81,7 +84,7 @@
         </div>
       </div>
       <div class="restaurants__card">
-        <img src="#" alt="Photo d'une table de restaurant">
+        <img src="./assets/images/restaurants/Le-délice-des-sens.jpg" alt="Photo d'une table de restaurant">
         <div class="restaurants__card__content">
           <div class="restaurants__card__content__text">
             <h3>Le délice des sens</h3>
@@ -95,7 +98,9 @@
     </section>
   </main>
   <footer>
-    <h2>ohmyfood</h2>
+    <div class="footer__logo">
+      <h2>ohmyfood</h2>
+    </div>
     <div class="footer__content">
       <a href="#"> <i class="fa-solid fa-utensils"></i> Proposer un restaurant</a>
       <a href="#"> <i class="fa-regular fa-handshake"></i> Devenir partenaire</a>
