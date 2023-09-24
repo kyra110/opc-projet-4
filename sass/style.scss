@@ -8,11 +8,11 @@ $footer-background: #353535;
 /****Fonts*****/
 @font-face {
   font-family: roboto;
-  src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+  src: url("./assets/fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: shrikhand;
-  src: url("/assets/fonts/shrinkhand/Shrikhand-Regular.ttf");
+  src: url("./assets/fonts/shrinkhand/Shrikhand-Regular.ttf");
 }
 /********mixins*******/
 @mixin flex-center {
