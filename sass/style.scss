@@ -8,11 +8,11 @@ $footer-background: #353535;
 /****Fonts*****/
 @font-face {
   font-family: roboto;
-  src: url("/assets/fonts/Roboto/Roboto-Regular.ttf");
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: shrikhand;
-  src: url("/assets/fonts/shrinkhand/Shrikhand-Regular.ttf");
+  src: url("../assets/fonts/shrinkhand/Shrikhand-Regular.ttf");
 }
 /********mixins*******/
 @mixin flex-center {
@@ -41,10 +41,14 @@ $footer-background: #353535;
   border: none;
   margin-bottom: 60px;
   @include shadow();
+  cursor: pointer;
 }
 /*********resets******/
 body {
   margin: 0;
+}
+* {
+  text-decoration: none;
 }
 /*********Header*********/
 header {
@@ -102,6 +106,9 @@ header {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    a {
+      color: $footer-background;
+    }
     .fonctionement__choix-container__composant {
       position: relative;
       display: flex;
