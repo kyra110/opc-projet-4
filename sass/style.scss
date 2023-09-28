@@ -42,6 +42,12 @@ $footer-background: #353535;
   margin-bottom: 60px;
   @include shadow();
   cursor: pointer;
+  transition: transform 0.2s;
+  // &:hover {
+  //   transform: scale(1.15);
+  //   color: black;
+  //   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  // }
 }
 /*********resets******/
 body {
@@ -192,6 +198,23 @@ header {
       }
       .restaurants__card__content__heart {
         height: 100%;
+        position: relative;
+      }
+      i {
+        position: absolute;
+        top: 10%;
+        right: 0%;
+      }
+      .fa-solid {
+        opacity: 0;
+        &:hover {
+          opacity: 1;
+          color: transparent;
+          background-clip: text;
+          -webkit-background-clip: text;
+          transition: all 0.4s ease-in-out;
+          background-image: $button-background;
+        }
       }
     }
   }
