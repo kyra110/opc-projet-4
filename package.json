@@ -1,0 +1,15 @@
+{
+  "name": "garcia_lainez_michel_p4_ohmyfood_092023",
+  "version": "1.0.0",
+  "description": "Projet N4 OpenClassrooms\r Améliorez l'interface d'un site mobile avec des animations CSS\r OhMyFood!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./assets/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.68.0"
+  }
+}
