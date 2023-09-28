@@ -20,7 +20,10 @@ $footer-background: #353535;
   justify-content: center;
 }
 @mixin shadow {
-  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.493);
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.493);
+}
+@mixin shadow-transform {
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.623);
 }
 @mixin h2-section {
   font-family: roboto, sans-serif;
@@ -40,14 +43,14 @@ $footer-background: #353535;
   padding: 15px 20px;
   border: none;
   margin-bottom: 60px;
-  @include shadow();
+  @include shadow;
   cursor: pointer;
-  transition: transform 0.2s;
-  // &:hover {
-  //   transform: scale(1.15);
-  //   color: black;
-  //   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  // }
+  transition: all 0.4s;
+  &:hover {
+    @include shadow-transform;
+    transform: scale(1.01);
+    opacity: 0.9;
+  }
 }
 /*********resets******/
 body {

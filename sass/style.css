@@ -21,9 +21,14 @@
   padding: 15px 20px;
   border: none;
   margin-bottom: 60px;
-  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.493);
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.493);
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: all 0.4s;
+}
+.button-CTA:hover {
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.623);
+  transform: scale(1.01);
+  opacity: 0.9;
 }
 
 /*********resets******/
@@ -112,7 +117,7 @@ header .header__gps-container {
   font-family: roboto, sans-serif;
   background: #f6f6f6;
   border-radius: 20px;
-  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.493);
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.493);
 }
 .fonctionement .fonctionement__choix-container span {
   position: absolute;
