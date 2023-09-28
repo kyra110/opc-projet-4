@@ -10,6 +10,24 @@
 }
 /********mixins*******/
 /********Composants*********/
+/*Nouveau*/
+.restaurants__card__nouveau {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+}
+.restaurants__card__nouveau p {
+  color: #008766;
+  font-family: Roboto;
+}
+
 /*boutons*/
 .button-CTA {
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
@@ -73,11 +91,11 @@ header .header__gps-container {
   align-items: center;
   gap: 20px;
 }
-.reservation h2 {
+.reservation h1 {
   padding: 40px 55px 0px 55px;
   text-align: center;
   margin: 0;
-  font-family: roboto, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
@@ -97,7 +115,7 @@ header .header__gps-container {
   margin-bottom: 40px;
 }
 .fonctionement h2 {
-  font-family: roboto, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
@@ -157,12 +175,13 @@ header .header__gps-container {
   padding: 50px 20px;
 }
 .restaurants h2 {
-  font-family: roboto, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
   margin: 0;
 }
 .restaurants .restaurants__card {
+  position: relative;
   overflow: hidden;
   height: 250px;
   display: flex;
@@ -191,7 +210,7 @@ header .header__gps-container {
 .restaurants .restaurants__card .restaurants__card__content p {
   margin: 0;
   font-size: 17px;
-  font-family: roboto, sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 300;
 }
 .restaurants .restaurants__card .restaurants__card__content .restaurants__card__content__heart {

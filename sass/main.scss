@@ -26,12 +26,27 @@ $footer-background: #353535;
   box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.623);
 }
 @mixin h2-section {
-  font-family: roboto, sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
 /********Composants*********/
-
+/*Nouveau*/
+.restaurants__card__nouveau {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  @include flex-center;
+  align-items: center;
+  background-color: #99e2d0;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  p {
+    color: #008766;
+    font-family: Roboto;
+  }
+}
 /*boutons*/
 .button-CTA {
   background: $button-background;
@@ -88,7 +103,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  h2 {
+  h1 {
     padding: 40px 55px 0px 55px;
     text-align: center;
     margin: 0;
@@ -170,6 +185,7 @@ header {
     margin: 0;
   }
   .restaurants__card {
+    position: relative;
     overflow: hidden;
     height: 250px;
     display: flex;
@@ -196,7 +212,7 @@ header {
       p {
         margin: 0;
         font-size: 17px;
-        font-family: roboto, sans-serif;
+        font-family: Roboto, sans-serif;
         font-weight: 300;
       }
       .restaurants__card__content__heart {
