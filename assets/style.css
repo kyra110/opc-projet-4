@@ -6,6 +6,7 @@ body {
 
 * {
   text-decoration: none;
+  color: inherit;
 }
 
 /****Fonts*****/
@@ -63,6 +64,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+header .fa-arrow-left {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  font-size: 1.5rem;
 }
 header .header__logo {
   display: flex;
@@ -80,6 +88,139 @@ header .header__gps-container {
   gap: 10px;
   background-color: #eaeaea;
   font-family: roboto, sans-serif;
+}
+
+/*******Reglage de la photo d'accueill des pages restaurants ****************/
+.accueil-image-restaurant {
+  height: 190px;
+  width: 100%;
+}
+.accueil-image-restaurant img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/*debut de la grande section*/
+.accueil-restaurant-titre {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0 0;
+  top: 0%;
+  right: 0%;
+}
+.accueil-restaurant-titre h1 {
+  font-size: 28px;
+  font-family: shrikhand;
+  font-weight: 400;
+  padding-left: 20px;
+}
+.accueil-restaurant-titre i {
+  position: absolute;
+  top: 37%;
+  right: 10%;
+  font-size: 1.5rem;
+}
+.accueil-restaurant-titre .fa-solid {
+  opacity: 0;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+}
+.accueil-restaurant-titre .fa-solid:hover {
+  opacity: 1;
+}
+
+.entrees,
+.plats,
+.desserts {
+  background-color: #f6f6f6;
+}
+.entrees h3,
+.plats h3,
+.desserts h3 {
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px 15px 10px 15px;
+}
+.entrees .ligne,
+.plats .ligne,
+.desserts .ligne {
+  width: 50px;
+  height: 3px;
+  background-color: #99e2d0;
+  margin-left: 15px;
+}
+.entrees .entrees__container,
+.plats .entrees__container,
+.desserts .entrees__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 30px;
+  gap: 15px;
+}
+.entrees .entrees__container__carte,
+.plats .entrees__container__carte,
+.desserts .entrees__container__carte {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  border-radius: 20px;
+  padding: 15px;
+}
+.entrees .entrees__container__carte-text,
+.plats .entrees__container__carte-text,
+.desserts .entrees__container__carte-text {
+  margin-right: auto;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.entrees .entrees__container__carte-text h2,
+.plats .entrees__container__carte-text h2,
+.desserts .entrees__container__carte-text h2 {
+  font-size: 1.2rem;
+  font-family: Roboto;
+  font-weight: 600;
+  margin: 0;
+}
+.entrees .entrees__container__carte-text p,
+.plats .entrees__container__carte-text p,
+.desserts .entrees__container__carte-text p {
+  font-size: 0.9rem;
+  font-family: Roboto;
+  font-weight: 300;
+  margin: 0;
+}
+.entrees .entrees__container__carte-prix,
+.plats .entrees__container__carte-prix,
+.desserts .entrees__container__carte-prix {
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.cta-container .button-CTA {
+  margin: 30px;
+  width: 55%;
 }
 
 /******section reservation*******/

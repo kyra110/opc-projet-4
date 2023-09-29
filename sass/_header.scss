@@ -3,6 +3,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  .fa-arrow-left {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-size: 1.5rem;
+  }
   .header__logo {
     @include flex-center();
     padding: 15px;
