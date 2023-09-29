@@ -1,0 +1,16 @@
+/********mixins*******/
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+@mixin shadow {
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.493);
+}
+@mixin shadow-transform {
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.623);
+}
+@mixin h2-section {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}

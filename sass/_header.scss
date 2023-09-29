@@ -1,0 +1,21 @@
+/*********Header*********/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .header__logo {
+    @include flex-center();
+    padding: 15px;
+    img {
+      width: 50%;
+    }
+  }
+  .header__gps-container {
+    @include flex-center();
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: $header-background;
+    font-family: roboto, sans-serif;
+  }
+}

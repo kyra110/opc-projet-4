@@ -1,0 +1,24 @@
+/******section reservation*******/
+.reservation {
+  background-color: $primary-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  h1 {
+    padding: 40px 55px 0px 55px;
+    text-align: center;
+    margin: 0;
+    @include h2-section();
+  }
+  p {
+    margin: 0;
+    padding: 0 30px;
+    text-align: center;
+    color: #353535;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 300;
+  }
+}

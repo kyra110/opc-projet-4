@@ -1,0 +1,37 @@
+/********Composants*********/
+/*Nouveau*/
+.restaurants__card__nouveau {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  @include flex-center;
+  align-items: center;
+  background-color: #99e2d0;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  p {
+    color: #008766;
+    font-family: Roboto;
+  }
+}
+/*boutons*/
+.button-CTA {
+  background: $button-background;
+  color: white;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  border-radius: 25px;
+  padding: 15px 20px;
+  border: none;
+  margin-bottom: 60px;
+  @include shadow;
+  cursor: pointer;
+  transition: all 0.4s;
+  &:hover {
+    @include shadow-transform;
+    transform: scale(1.01);
+    opacity: 0.9;
+  }
+}

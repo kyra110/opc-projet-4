@@ -1,4 +1,13 @@
 /*******Variables********/
+/*********resets******/
+body {
+  margin: 0;
+}
+
+* {
+  text-decoration: none;
+}
+
 /****Fonts*****/
 @font-face {
   font-family: roboto;
@@ -47,15 +56,6 @@
   box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.623);
   transform: scale(1.01);
   opacity: 0.9;
-}
-
-/*********resets******/
-body {
-  margin: 0;
-}
-
-* {
-  text-decoration: none;
 }
 
 /*********Header*********/
