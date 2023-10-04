@@ -390,4 +390,42 @@ header .header__gps-container {
   width: 55%;
 }
 
+/******Animation du Loader de chargement************/
+.loader-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 91, 91, 0.299);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  opacity: 1;
+  animation: fadeOut 1s linear 1s forwards;
+}
+
+.loader {
+  font-size: 5rem;
+  color: purple;
+  animation: rotateLoader 1s linear infinite;
+}
+
+@keyframes rotateLoader {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
