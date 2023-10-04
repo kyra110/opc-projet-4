@@ -19,7 +19,7 @@
   top: 0%;
   right: 0%;
   h1 {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-family: shrikhand;
     font-weight: 400;
     padding-left: 20px;
@@ -42,11 +42,11 @@
     }
   }
 }
-/*Composant descriptif menu */
+/* descriptif menu titre et ligne*/
 .card-box {
   background-color: $primary-background;
   h3 {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: Roboto;
     font-weight: 300;
     text-transform: uppercase;
@@ -59,43 +59,102 @@
     background-color: #99e2d0;
     margin-left: 15px;
   }
+  /**********parie menu &animationPrix************/
   .card-box__container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px 30px;
+    padding: 10px;
     gap: 15px;
+
     &__carte {
       background-color: $segondary-background;
       display: flex;
       justify-content: flex-start;
       align-items: flex-end;
       width: 100%;
-      border-radius: 20px;
-      padding: 15px;
+      border-radius: 15px;
+      height: 60px;
+      overflow: hidden;
+      /***survolAnimation***/
+      &:hover {
+        & .card-box__container__carte-text {
+          h2 {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+          p {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+        & .card-box__container__carte-prix {
+          transform: translateX(0px);
+          & .fa-circle-check {
+            color: white;
+            transform: rotate(2turn);
+          }
+          & span {
+            background-color: #99e2d0;
+          }
+        }
+      }
     }
     &__carte-text {
       margin-right: auto;
       display: flex;
       gap: 5px;
       flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      padding: 0 0 0 15px;
+      overflow: hidden;
       h2 {
-        font-size: 1.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 1rem;
         font-family: Roboto;
         font-weight: 600;
         margin: 0;
       }
       p {
-        font-size: 0.9rem;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 0.8rem;
         font-family: Roboto;
         font-weight: 300;
         margin: 0;
       }
     }
     &__carte-prix {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
       font-family: Roboto;
       font-weight: 700;
+      transform: translateX(45px);
+      transition: all 0.4s;
+      p {
+        padding-top: 25px;
+        margin-right: 10px;
+      }
+      span {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50px;
+        border-radius: 0 15px 15px 0px;
+        .fa-circle-check {
+          color: transparent;
+          transition: all 0.4s;
+        }
+      }
     }
   }
 }

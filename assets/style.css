@@ -296,7 +296,7 @@ header .header__gps-container {
   right: 0%;
 }
 .accueil-restaurant-titre h1 {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-family: shrikhand;
   font-weight: 400;
   padding-left: 20px;
@@ -319,12 +319,13 @@ header .header__gps-container {
   opacity: 1;
 }
 
-/*Composant descriptif menu */
+/* descriptif menu titre et ligne*/
 .card-box {
   background-color: #f6f6f6;
+  /**********parie menu &animationPrix************/
 }
 .card-box h3 {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: Roboto;
   font-weight: 300;
   text-transform: uppercase;
@@ -342,7 +343,7 @@ header .header__gps-container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 10px 30px;
+  padding: 10px;
   gap: 15px;
 }
 .card-box .card-box__container__carte {
@@ -351,30 +352,83 @@ header .header__gps-container {
   justify-content: flex-start;
   align-items: flex-end;
   width: 100%;
-  border-radius: 20px;
-  padding: 15px;
+  border-radius: 15px;
+  height: 60px;
+  overflow: hidden;
+  /***survolAnimation***/
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-text h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-text p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-prix {
+  transform: translateX(0px);
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-prix .fa-circle-check {
+  color: white;
+  transform: rotate(2turn);
+}
+.card-box .card-box__container__carte:hover .card-box__container__carte-prix span {
+  background-color: #99e2d0;
 }
 .card-box .card-box__container__carte-text {
   margin-right: auto;
   display: flex;
   gap: 5px;
   flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 0 0 0 15px;
+  overflow: hidden;
 }
 .card-box .card-box__container__carte-text h2 {
-  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1rem;
   font-family: Roboto;
   font-weight: 600;
   margin: 0;
 }
 .card-box .card-box__container__carte-text p {
-  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.8rem;
   font-family: Roboto;
   font-weight: 300;
   margin: 0;
 }
 .card-box .card-box__container__carte-prix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   font-family: Roboto;
   font-weight: 700;
+  transform: translateX(45px);
+  transition: all 0.4s;
+}
+.card-box .card-box__container__carte-prix p {
+  padding-top: 25px;
+  margin-right: 10px;
+}
+.card-box .card-box__container__carte-prix span {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50px;
+  border-radius: 0 15px 15px 0px;
+}
+.card-box .card-box__container__carte-prix span .fa-circle-check {
+  color: transparent;
+  transition: all 0.4s;
 }
 
 /****Bouton****/
