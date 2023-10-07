@@ -19,6 +19,7 @@ main {
 .accueil-restaurant-titre {
   @media screen and (min-width: 768px) {
     width: 100%;
+    justify-content: center;
   }
   position: relative;
   display: flex;
@@ -38,7 +39,12 @@ main {
     top: 30px;
     right: 35px;
     font-size: 1.5rem;
+    @media screen and (min-width: 768px) {
+      right: 388px;
+      top: 27px;
+    }
   }
+
   .fa-solid {
     opacity: 0;
     color: transparent;
@@ -189,5 +195,6 @@ main {
   width: 100%;
   .button-CTA {
     margin: 30px 0 40px 0;
+    padding: 15px 40px;
   }
 }
