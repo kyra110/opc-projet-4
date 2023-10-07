@@ -1,3 +1,10 @@
+main {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /*******Reglage de la photo d'accueill des pages restaurants ****************/
 .accueil-image-restaurant {
   height: 240px;
@@ -43,6 +50,9 @@
 }
 /*superposition conteneur sur img restaurant*/
 .container-menu {
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
   margin-top: -50px;
 }
 /* descriptif menu titre et ligne*/

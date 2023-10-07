@@ -1,5 +1,8 @@
 /*********footer**************/
 footer {
+  @media screen and (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
   background: $footer-background;
   display: flex;
   flex-direction: column;
@@ -11,9 +14,18 @@ footer {
       font-family: shrikhand, sans-serif;
       font-weight: 300;
       margin: 0 0 10px;
+      @media screen and (min-width: 768px) {
+        margin: 0 40px 10px;
+      }
     }
   }
   .footer__content {
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      margin-right: 80px;
+      align-items: center;
+      gap: 25px;
+    }
     display: flex;
     flex-direction: column;
     gap: 10px;

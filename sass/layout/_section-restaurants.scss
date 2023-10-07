@@ -6,6 +6,34 @@
   gap: 15px;
   background-color: $primary-background;
   padding: 50px 20px;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 40px 80px;
+    padding: 50px 0px;
+    grid-template-columns: repeat(2, 35%);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title title"
+      "card1 card2"
+      "card3 card4";
+    .title {
+      grid-area: title;
+    }
+    .card1 {
+      grid-area: card1;
+    }
+    .card2 {
+      grid-area: card2;
+    }
+    .card3 {
+      grid-area: card3;
+    }
+    .card4 {
+      grid-area: card4;
+    }
+  }
   h2 {
     @include h2-section();
     margin: 0;

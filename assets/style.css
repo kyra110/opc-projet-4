@@ -126,6 +126,11 @@ footer {
   flex-direction: column;
   padding: 20px;
 }
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row-reverse;
+  }
+}
 footer .footer__logo h2 {
   color: white;
   font-size: 18px;
@@ -133,10 +138,23 @@ footer .footer__logo h2 {
   font-weight: 300;
   margin: 0 0 10px;
 }
+@media screen and (min-width: 768px) {
+  footer .footer__logo h2 {
+    margin: 0 40px 10px;
+  }
+}
 footer .footer__content {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  footer .footer__content {
+    flex-direction: row;
+    margin-right: 80px;
+    align-items: center;
+    gap: 25px;
+  }
 }
 footer .footer__content a {
   color: #ffffff;
@@ -187,6 +205,16 @@ header .header__gps-container {
   padding: 20px;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .fonctionement {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .fonctionement {
+    width: 100%;
+  }
+}
 .fonctionement h2 {
   font-family: Roboto, sans-serif;
   font-size: 24px;
@@ -196,6 +224,27 @@ header .header__gps-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+@media screen and (min-width: 1050px) {
+  .fonctionement .fonctionement__choix-container {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-template-areas: "title title title" "card1 card2 card3";
+  }
+  .fonctionement .fonctionement__choix-container .title {
+    grid-area: title;
+  }
+  .fonctionement .fonctionement__choix-container .card1 {
+    grid-area: card1;
+  }
+  .fonctionement .fonctionement__choix-container .card2 {
+    grid-area: card2;
+  }
+  .fonctionement .fonctionement__choix-container .card3 {
+    grid-area: card3;
+  }
 }
 .fonctionement .fonctionement__choix-container a {
   color: #353535;
@@ -209,6 +258,11 @@ header .header__gps-container {
   background: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.493);
+}
+@media screen and (min-width: 768px) {
+  .fonctionement .fonctionement__choix-container .fonctionement__choix-container__composant {
+    width: 100%;
+  }
 }
 .fonctionement .fonctionement__choix-container span {
   position: absolute;
@@ -241,6 +295,7 @@ header .header__gps-container {
 
 /******section reservation*******/
 .reservation {
+  width: 100%;
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -274,6 +329,33 @@ header .header__gps-container {
   gap: 15px;
   background-color: #f6f6f6;
   padding: 50px 20px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 40px 80px;
+    padding: 50px 0px;
+    grid-template-columns: repeat(2, 35%);
+    grid-template-rows: auto;
+    grid-template-areas: "title title" "card1 card2" "card3 card4";
+  }
+  .restaurants .title {
+    grid-area: title;
+  }
+  .restaurants .card1 {
+    grid-area: card1;
+  }
+  .restaurants .card2 {
+    grid-area: card2;
+  }
+  .restaurants .card3 {
+    grid-area: card3;
+  }
+  .restaurants .card4 {
+    grid-area: card4;
+  }
 }
 .restaurants h2 {
   font-family: Roboto, sans-serif;
@@ -342,6 +424,14 @@ header .header__gps-container {
   opacity: 1;
 }
 
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /*******Reglage de la photo d'accueill des pages restaurants ****************/
 .accueil-image-restaurant {
   height: 240px;
@@ -390,6 +480,11 @@ header .header__gps-container {
 /*superposition conteneur sur img restaurant*/
 .container-menu {
   margin-top: -50px;
+}
+@media screen and (min-width: 768px) {
+  .container-menu {
+    width: 80%;
+  }
 }
 
 /* descriptif menu titre et ligne*/
