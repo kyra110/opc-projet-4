@@ -1,5 +1,6 @@
 /****section restaurants****/
 .restaurants {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -12,53 +13,60 @@
   .restaurants__card {
     position: relative;
     overflow: hidden;
-    height: 250px;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     background: $segondary-background;
-    img {
-      height: 75%;
-      object-fit: cover;
-    }
-    .restaurants__card__content {
+    a {
+      position: relative;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      height: 25%;
-      padding: 10px;
-      h3 {
-        font-size: 18px;
-        font-family: roboto, sans-serif;
-        font-weight: 700;
-        margin: 0;
+      flex-direction: column;
+      height: 250px;
+      img {
+        height: 75%;
+        width: 100%;
+        object-fit: cover;
       }
-      p {
-        margin: 0;
-        font-size: 17px;
-        font-family: Roboto, sans-serif;
-        font-weight: 300;
-      }
-      .restaurants__card__content__heart {
-        height: 100%;
-        position: relative;
-      }
-      i {
-        position: absolute;
-        top: 10%;
-        right: 0%;
-      }
-      .fa-solid {
-        opacity: 0;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        transition: all 0.4s ease-in-out;
-        background-image: $button-background;
-        &:hover {
-          opacity: 1;
+      .restaurants__card__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 25%;
+        padding: 10px;
+        h3 {
+          font-size: 18px;
+          font-family: roboto, sans-serif;
+          font-weight: 700;
+          margin: 0;
         }
+        p {
+          margin: 0;
+          font-size: 17px;
+          font-family: Roboto, sans-serif;
+          font-weight: 300;
+        }
+      }
+    }
+    .restaurants__card__content__heart {
+      position: absolute;
+      top: 205px;
+      right: 45px;
+      background-color: aqua;
+    }
+    i {
+      position: absolute;
+      font-size: 1.3rem;
+    }
+    .fa-solid {
+      opacity: 0;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      transition: all 0.4s ease-in-out;
+      background-image: $button-background;
+      &:hover {
+        opacity: 1;
       }
     }
   }

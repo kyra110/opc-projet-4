@@ -1,14 +1,13 @@
 /******Animation du Loader de chargement************/
 .loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   height: 100%;
   width: 100%;
   background-color: rgba(94, 91, 91, 0.299);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 99999;
-  opacity: 1;
   animation: fadeOut 1s linear 1s forwards;
 }
 .loader {
@@ -43,4 +42,13 @@
     transform: translateX(0px);
     opacity: 1;
   }
+}
+.entrees {
+  animation: anim-card-box 0.4s;
+}
+.plats {
+  animation: anim-card-box 0.8s;
+}
+.desserts {
+  animation: anim-card-box 1.2s;
 }

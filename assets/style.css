@@ -12,6 +12,7 @@
 /*********resets******/
 body {
   margin: 0;
+  max-width: 1440px;
 }
 
 * {
@@ -23,8 +24,8 @@ body {
 /*Nouveau*/
 .restaurants__card__nouveau {
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 10px;
+  right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,6 +58,65 @@ body {
   box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.623);
   transform: scale(1.01);
   opacity: 0.9;
+}
+
+/******Animation du Loader de chargement************/
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 91, 91, 0.299);
+  z-index: 99999;
+  animation: fadeOut 1s linear 1s forwards;
+}
+
+.loader {
+  font-size: 5rem;
+  color: purple;
+  animation: rotateLoader 1s linear infinite;
+}
+
+@keyframes rotateLoader {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+/*****animation card-box****/
+@keyframes anim-card-box {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.entrees {
+  animation: anim-card-box 0.4s;
+}
+
+.plats {
+  animation: anim-card-box 0.8s;
+}
+
+.desserts {
+  animation: anim-card-box 1.2s;
 }
 
 /*********footer**************/
@@ -99,8 +159,8 @@ header {
 }
 header .fa-arrow-left {
   position: absolute;
-  top: 35%;
-  left: 5%;
+  top: 23px;
+  left: 20px;
   font-size: 1.5rem;
 }
 header .header__logo {
@@ -109,7 +169,8 @@ header .header__logo {
   padding: 15px;
 }
 header .header__logo img {
-  width: 50%;
+  width: 200px;
+  height: 40px;
 }
 header .header__gps-container {
   display: flex;
@@ -207,6 +268,7 @@ header .header__gps-container {
 
 /****section restaurants****/
 .restaurants {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -222,17 +284,23 @@ header .header__gps-container {
 .restaurants .restaurants__card {
   position: relative;
   overflow: hidden;
-  height: 250px;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
   background: #ffffff;
 }
-.restaurants .restaurants__card img {
+.restaurants .restaurants__card a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+}
+.restaurants .restaurants__card a img {
   height: 75%;
+  width: 100%;
   object-fit: cover;
 }
-.restaurants .restaurants__card .restaurants__card__content {
+.restaurants .restaurants__card a .restaurants__card__content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -240,28 +308,29 @@ header .header__gps-container {
   height: 25%;
   padding: 10px;
 }
-.restaurants .restaurants__card .restaurants__card__content h3 {
+.restaurants .restaurants__card a .restaurants__card__content h3 {
   font-size: 18px;
   font-family: roboto, sans-serif;
   font-weight: 700;
   margin: 0;
 }
-.restaurants .restaurants__card .restaurants__card__content p {
+.restaurants .restaurants__card a .restaurants__card__content p {
   margin: 0;
   font-size: 17px;
   font-family: Roboto, sans-serif;
   font-weight: 300;
 }
-.restaurants .restaurants__card .restaurants__card__content .restaurants__card__content__heart {
-  height: 100%;
-  position: relative;
-}
-.restaurants .restaurants__card .restaurants__card__content i {
+.restaurants .restaurants__card .restaurants__card__content__heart {
   position: absolute;
-  top: 10%;
-  right: 0%;
+  top: 205px;
+  right: 45px;
+  background-color: aqua;
 }
-.restaurants .restaurants__card .restaurants__card__content .fa-solid {
+.restaurants .restaurants__card i {
+  position: absolute;
+  font-size: 1.3rem;
+}
+.restaurants .restaurants__card .fa-solid {
   opacity: 0;
   color: transparent;
   background-clip: text;
@@ -269,19 +338,18 @@ header .header__gps-container {
   transition: all 0.4s ease-in-out;
   background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
-.restaurants .restaurants__card .restaurants__card__content .fa-solid:hover {
+.restaurants .restaurants__card .fa-solid:hover {
   opacity: 1;
 }
 
 /*******Reglage de la photo d'accueill des pages restaurants ****************/
 .accueil-image-restaurant {
-  height: 190px;
+  height: 240px;
   width: 100%;
 }
 .accueil-image-restaurant img {
   width: 100%;
-  position: absolute;
-  z-index: -1;
+  height: 240px;
   object-fit: cover;
 }
 
@@ -303,8 +371,8 @@ header .header__gps-container {
 }
 .accueil-restaurant-titre i {
   position: absolute;
-  top: 37%;
-  right: 10%;
+  top: 30px;
+  right: 35px;
   font-size: 1.5rem;
 }
 .accueil-restaurant-titre .fa-solid {
@@ -319,13 +387,17 @@ header .header__gps-container {
   opacity: 1;
 }
 
+/*superposition conteneur sur img restaurant*/
+.container-menu {
+  margin-top: -50px;
+}
+
 /* descriptif menu titre et ligne*/
 .card-box {
   background-color: #f6f6f6;
   /**********parie menu &animationPrix************/
 }
 .card-box h3 {
-  animation: anim-card-box 1s;
   font-family: Roboto;
   font-weight: 300;
   text-transform: uppercase;
@@ -333,14 +405,12 @@ header .header__gps-container {
   padding: 20px 15px 10px 15px;
 }
 .card-box .ligne {
-  animation: anim-card-box 1s;
   width: 50px;
   height: 3px;
   background-color: #99e2d0;
   margin-left: 15px;
 }
 .card-box .card-box__container {
-  animation: anim-card-box 0.8s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -361,13 +431,9 @@ header .header__gps-container {
 }
 .card-box .card-box__container__carte:hover .card-box__container__carte-text h2 {
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .card-box .card-box__container__carte:hover .card-box__container__carte-text p {
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .card-box .card-box__container__carte:hover .card-box__container__carte-prix {
   transform: translateX(0px);
@@ -388,9 +454,11 @@ header .header__gps-container {
   justify-content: center;
   padding: 0 0 0 15px;
   overflow: hidden;
+  white-space: nowrap;
 }
 .card-box .card-box__container__carte-text h2 {
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
   font-size: 1rem;
   font-family: Roboto;
@@ -399,6 +467,7 @@ header .header__gps-container {
 }
 .card-box .card-box__container__carte-text p {
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
   font-size: 0.8rem;
   font-family: Roboto;
@@ -443,56 +512,6 @@ header .header__gps-container {
 }
 .cta-container .button-CTA {
   margin: 30px 0 40px 0;
-  width: 55%;
-}
-
-/******Animation du Loader de chargement************/
-.loader-container {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(94, 91, 91, 0.299);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 99999;
-  opacity: 1;
-  animation: fadeOut 1s linear 1s forwards;
-}
-
-.loader {
-  font-size: 5rem;
-  color: purple;
-  animation: rotateLoader 1s linear infinite;
-}
-
-@keyframes rotateLoader {
-  0% {
-    transform: rotate(0turn);
-  }
-  100% {
-    transform: rotate(1turn);
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
-/*****animation card-box****/
-@keyframes anim-card-box {
-  0% {
-    transform: translateX(-500px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

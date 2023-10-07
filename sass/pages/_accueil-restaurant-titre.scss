@@ -1,11 +1,10 @@
 /*******Reglage de la photo d'accueill des pages restaurants ****************/
 .accueil-image-restaurant {
-  height: 190px;
+  height: 240px;
   width: 100%;
   img {
     width: 100%;
-    position: absolute;
-    z-index: -1;
+    height: 240px;
     object-fit: cover;
   }
 }
@@ -26,8 +25,8 @@
   }
   i {
     position: absolute;
-    top: 37%;
-    right: 10%;
+    top: 30px;
+    right: 35px;
     font-size: 1.5rem;
   }
   .fa-solid {
@@ -42,11 +41,14 @@
     }
   }
 }
+/*superposition conteneur sur img restaurant*/
+.container-menu {
+  margin-top: -50px;
+}
 /* descriptif menu titre et ligne*/
 .card-box {
   background-color: $primary-background;
   h3 {
-    animation: anim-card-box 1s;
     font-family: Roboto;
     font-weight: 300;
     text-transform: uppercase;
@@ -54,7 +56,6 @@
     padding: 20px 15px 10px 15px;
   }
   .ligne {
-    animation: anim-card-box 1s;
     width: 50px;
     height: 3px;
     background-color: #99e2d0;
@@ -62,7 +63,6 @@
   }
   /**********parie menu &animationPrix************/
   .card-box__container {
-    animation: anim-card-box 0.8s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,13 +84,9 @@
         & .card-box__container__carte-text {
           h2 {
             overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
           }
           p {
             overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
           }
         }
         & .card-box__container__carte-prix {
@@ -114,8 +110,10 @@
       justify-content: center;
       padding: 0 0 0 15px;
       overflow: hidden;
+      white-space: nowrap;
       h2 {
         white-space: nowrap;
+        text-overflow: ellipsis;
         overflow: hidden;
         font-size: 1rem;
         font-family: Roboto;
@@ -124,6 +122,7 @@
       }
       p {
         white-space: nowrap;
+        text-overflow: ellipsis;
         overflow: hidden;
         font-size: 0.8rem;
         font-family: Roboto;
@@ -169,6 +168,5 @@
   width: 100%;
   .button-CTA {
     margin: 30px 0 40px 0;
-    width: 55%;
   }
 }
