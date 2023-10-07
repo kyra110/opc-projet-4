@@ -17,17 +17,20 @@ main {
 }
 /*h1 + coeur*/
 .accueil-restaurant-titre {
-  @media screen and (min-width: 768px) {
-    width: 100%;
-    justify-content: center;
-  }
-  position: relative;
   display: flex;
   align-items: center;
   background-color: $primary-background;
   border-radius: 25px 25px 0 0;
-  top: 0%;
-  right: 0%;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    justify-content: center;
+  }
+  .container-coeur {
+    @media screen and (min-width: 768px) {
+      position: relative;
+    }
+  }
   h1 {
     font-size: 1.75rem;
     font-family: shrikhand;
@@ -36,12 +39,12 @@ main {
   }
   i {
     position: absolute;
-    top: 30px;
+    top: 27px;
     right: 35px;
     font-size: 1.5rem;
     @media screen and (min-width: 768px) {
-      right: 388px;
-      top: 27px;
+      top: -13px;
+      right: -50px;
     }
   }
 
@@ -59,15 +62,17 @@ main {
 }
 /*superposition conteneur sur img restaurant*/
 .container-menu {
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
     width: 80%;
-    background-color: #f6f6f6;
-    border-radius: 25px 25px 0 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
-  margin-top: -50px;
 }
 /* descriptif menu titre et ligne*/
 .card-box {

@@ -445,18 +445,21 @@ header .header__gps-container {
 
 /*h1 + coeur*/
 .accueil-restaurant-titre {
-  position: relative;
   display: flex;
   align-items: center;
   background-color: #f6f6f6;
   border-radius: 25px 25px 0 0;
-  top: 0%;
-  right: 0%;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .accueil-restaurant-titre {
     width: 100%;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .accueil-restaurant-titre .container-coeur {
+    position: relative;
   }
 }
 .accueil-restaurant-titre h1 {
@@ -467,14 +470,14 @@ header .header__gps-container {
 }
 .accueil-restaurant-titre i {
   position: absolute;
-  top: 30px;
+  top: 27px;
   right: 35px;
   font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .accueil-restaurant-titre i {
-    right: 388px;
-    top: 27px;
+    top: -13px;
+    right: -50px;
   }
 }
 .accueil-restaurant-titre .fa-solid {
@@ -491,15 +494,17 @@ header .header__gps-container {
 
 /*superposition conteneur sur img restaurant*/
 .container-menu {
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0 0;
+  width: 100%;
   margin-top: -50px;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .container-menu {
     width: 80%;
-    background-color: #f6f6f6;
-    border-radius: 25px 25px 0 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
 }
