@@ -49,7 +49,7 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      height: 250px;
+      height: 275px;
       img {
         height: 75%;
         width: 100%;
@@ -60,7 +60,6 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        height: 25%;
         padding: 10px;
         h3 {
           font-size: 18px;
@@ -78,7 +77,7 @@
     }
     .restaurants__card__content__heart {
       position: absolute;
-      top: 205px;
+      top: 225px;
       right: 45px;
       background-color: aqua;
     }

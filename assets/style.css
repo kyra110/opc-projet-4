@@ -11,7 +11,7 @@
 }
 /*********resets******/
 body {
-  margin: 0;
+  margin: 0 auto;
   max-width: 1440px;
 }
 
@@ -125,6 +125,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  font-family: roboto, sans-serif;
 }
 @media screen and (min-width: 768px) {
   footer {
@@ -375,7 +376,7 @@ header .header__gps-container {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 250px;
+  height: 275px;
 }
 .restaurants .restaurants__card a img {
   height: 75%;
@@ -387,7 +388,6 @@ header .header__gps-container {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  height: 25%;
   padding: 10px;
 }
 .restaurants .restaurants__card a .restaurants__card__content h3 {
@@ -404,7 +404,7 @@ header .header__gps-container {
 }
 .restaurants .restaurants__card .restaurants__card__content__heart {
   position: absolute;
-  top: 205px;
+  top: 225px;
   right: 45px;
   background-color: aqua;
 }
