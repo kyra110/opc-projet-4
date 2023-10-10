@@ -201,56 +201,56 @@ header .header__gps-container {
   font-family: roboto, sans-serif;
 }
 
-/******section fonctionement*******/
-.fonctionement {
+/******section fonctionnement*******/
+.fonctionnement {
   padding: 20px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
-  .fonctionement {
+  .fonctionnement {
     width: 80%;
   }
 }
 @media screen and (min-width: 1050px) {
-  .fonctionement {
+  .fonctionnement {
     width: 100%;
   }
 }
-.fonctionement h2 {
+.fonctionnement h2 {
   font-family: Roboto, sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
-.fonctionement .fonctionement__choix-container {
+.fonctionnement .fonctionnement__choix-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 @media screen and (min-width: 1050px) {
-  .fonctionement .fonctionement__choix-container {
+  .fonctionnement .fonctionnement__choix-container {
     display: grid;
     grid-template-columns: repeat(3, 25%);
     grid-template-rows: auto;
     justify-content: center;
     grid-template-areas: "title title title" "card1 card2 card3";
   }
-  .fonctionement .fonctionement__choix-container .title {
+  .fonctionnement .fonctionnement__choix-container .title {
     grid-area: title;
   }
-  .fonctionement .fonctionement__choix-container .card1 {
+  .fonctionnement .fonctionnement__choix-container .card1 {
     grid-area: card1;
   }
-  .fonctionement .fonctionement__choix-container .card2 {
+  .fonctionnement .fonctionnement__choix-container .card2 {
     grid-area: card2;
   }
-  .fonctionement .fonctionement__choix-container .card3 {
+  .fonctionnement .fonctionnement__choix-container .card3 {
     grid-area: card3;
   }
 }
-.fonctionement .fonctionement__choix-container a {
+.fonctionnement .fonctionnement__choix-container a {
   color: black;
 }
-.fonctionement .fonctionement__choix-container .fonctionement__choix-container__composant {
+.fonctionnement .fonctionnement__choix-container .fonctionnement__choix-container__composant {
   position: relative;
   display: flex;
   align-items: center;
@@ -261,11 +261,11 @@ header .header__gps-container {
   box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.493);
 }
 @media screen and (min-width: 768px) {
-  .fonctionement .fonctionement__choix-container .fonctionement__choix-container__composant {
+  .fonctionnement .fonctionnement__choix-container .fonctionnement__choix-container__composant {
     width: 100%;
   }
 }
-.fonctionement .fonctionement__choix-container span {
+.fonctionnement .fonctionnement__choix-container span {
   position: absolute;
   top: 20px;
   left: -10px;
@@ -280,17 +280,17 @@ header .header__gps-container {
   font-size: 0.9rem;
   font-family: "roboto";
 }
-.fonctionement .fonctionement__choix-container .fa-solid {
+.fonctionnement .fonctionnement__choix-container .fa-solid {
   font-weight: 900;
   margin-left: 20px;
 }
-.fonctionement .fonctionement__choix-container .fa-solid.fa-mobile-screen-button {
+.fonctionnement .fonctionnement__choix-container .fa-solid.fa-mobile-screen-button {
   color: #7e7e7e;
 }
-.fonctionement .fonctionement__choix-container .fa-solid.fa-list {
+.fonctionnement .fonctionnement__choix-container .fa-solid.fa-list {
   color: #7e7e7e;
 }
-.fonctionement .fonctionement__choix-container .fa-solid.fa-store {
+.fonctionnement .fonctionnement__choix-container .fa-solid.fa-store {
   color: #9356dc;
 }
 
@@ -497,7 +497,7 @@ header .header__gps-container {
   background-color: #f6f6f6;
   border-radius: 25px 25px 0 0;
   width: 100%;
-  margin-top: -50px;
+  margin-top: -25px;
   display: flex;
   flex-direction: column;
 }
@@ -516,7 +516,7 @@ header .header__gps-container {
 }
 @media screen and (min-width: 768px) {
   .card-box {
-    width: 60%;
+    width: 70%;
   }
 }
 .card-box h3 {

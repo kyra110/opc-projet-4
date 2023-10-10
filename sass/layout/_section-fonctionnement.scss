@@ -1,5 +1,5 @@
-/******section fonctionement*******/
-.fonctionement {
+/******section fonctionnement*******/
+.fonctionnement {
   padding: 20px;
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
@@ -11,7 +11,7 @@
   h2 {
     @include h2-section();
   }
-  .fonctionement__choix-container {
+  .fonctionnement__choix-container {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -39,7 +39,7 @@
     a {
       color: black;
     }
-    .fonctionement__choix-container__composant {
+    .fonctionnement__choix-container__composant {
       @media screen and (min-width: 768px) {
         width: 100%;
       }
