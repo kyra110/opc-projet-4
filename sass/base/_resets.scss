@@ -1,5 +1,8 @@
 /*********resets******/
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0 auto;
   max-width: 1440px;
 }
