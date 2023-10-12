@@ -67,15 +67,20 @@ body {
   align-items: center;
   position: fixed;
   height: 100%;
-  width: 100%;
+  width: 1440px;
   background-color: rgba(94, 91, 91, 0.299);
   z-index: 99999;
   animation: fadeOut 1s linear 1s forwards;
 }
 
 .loader {
-  font-size: 5rem;
-  color: purple;
+  height: 100px;
+  width: 100px;
+  border-top: 10px solid #9356dc;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #9356dc;
+  border-left: 10px solid transparent;
+  border-radius: 100px;
   animation: rotateLoader 1s linear infinite;
 }
 
