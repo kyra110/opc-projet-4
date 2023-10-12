@@ -6,9 +6,11 @@
   align-items: center;
   position: fixed;
   height: 100%;
-  width: 1440px;
+  width: 100%;
   background-color: rgba(94, 91, 91, 0.299);
   z-index: 99999;
+  top: 0;
+  left: 0;
   animation: fadeOut 1s linear 1s forwards;
 }
 .loader {
@@ -36,7 +38,7 @@
   }
   100% {
     opacity: 0;
-    display: none;
+    // display: none;
   }
 }
 /*****animation card-box****/
