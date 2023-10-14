@@ -36,6 +36,9 @@ main {
     font-family: shrikhand;
     font-weight: 400;
     padding-left: 20px;
+    @media screen and (max-width: 345px) {
+      font-size: 1.5rem;
+    }
   }
   i {
     position: absolute;
@@ -45,6 +48,9 @@ main {
     @media screen and (min-width: 768px) {
       top: -13px;
       right: -50px;
+    }
+    @media screen and (max-width: 345px) {
+      top: 22px;
     }
   }
 
@@ -80,7 +86,7 @@ main {
     width: 70%;
   }
   background-color: $primary-background;
-  h3 {
+  h2 {
     font-family: Roboto;
     font-weight: 300;
     text-transform: uppercase;
@@ -143,7 +149,7 @@ main {
       padding: 0 0 0 15px;
       overflow: hidden;
       white-space: nowrap;
-      h2 {
+      h3 {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;

@@ -1,0 +1,209 @@
+/******section reservation*******/
+.reservation {
+  width: 100%;
+  background-color: $primary-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  h1 {
+    padding: 40px 55px 0px 55px;
+    text-align: center;
+    margin: 0;
+    @include h2-section();
+  }
+  p {
+    margin: 0;
+    padding: 0 30px;
+    text-align: center;
+    color: #353535;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 300;
+  }
+}
+/******section fonctionnement*******/
+.fonctionnement {
+  padding: 20px;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    width: 80%;
+  }
+  @media screen and (min-width: 1050px) {
+    width: 100%;
+  }
+  h2 {
+    @include h2-section();
+  }
+  .fonctionnement__choix-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @media screen and (min-width: 1050px) {
+      display: grid;
+      gap: 15px 50px;
+      grid-template-columns: repeat(3, 25%);
+      grid-template-rows: auto;
+      justify-content: center;
+      grid-template-areas:
+        "title title title"
+        "card1 card2 card3";
+      .title {
+        grid-area: title;
+      }
+      .card1 {
+        grid-area: card1;
+      }
+      .card2 {
+        grid-area: card2;
+      }
+      .card3 {
+        grid-area: card3;
+      }
+    }
+    a {
+      color: black;
+    }
+    .fonctionnement__choix-container__composant {
+      @media screen and (min-width: 768px) {
+        width: 100%;
+      }
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: roboto, sans-serif;
+      background: $primary-background;
+      border-radius: 20px;
+      @include shadow();
+    }
+    span {
+      position: absolute;
+      top: 20px;
+      left: -10px;
+      display: flex;
+      height: 24px;
+      width: 24px;
+      background: $color-elipse;
+      border-radius: 200px;
+      color: #f6f6f6;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.9rem;
+      font-family: "roboto";
+    }
+    .fa-solid {
+      font-weight: 900;
+      margin-left: 20px;
+      &.fa-mobile-screen-button {
+        color: #7e7e7e;
+      }
+      &.fa-list {
+        color: #7e7e7e;
+      }
+      &.fa-store {
+        color: $color-elipse;
+      }
+    }
+  }
+}
+/****section restaurants****/
+.restaurants {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: $primary-background;
+  padding: 50px 20px;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 40px 80px;
+    padding: 50px 0px;
+    grid-template-columns: repeat(2, 35%);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title title"
+      "card1 card2"
+      "card3 card4";
+    .title {
+      grid-area: title;
+    }
+    .card1 {
+      grid-area: card1;
+    }
+    .card2 {
+      grid-area: card2;
+    }
+    .card3 {
+      grid-area: card3;
+    }
+    .card4 {
+      grid-area: card4;
+    }
+  }
+  h2 {
+    @include h2-section();
+    margin: 0;
+  }
+  .restaurants__card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: $segondary-background;
+    a {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 275px;
+      img {
+        height: 75%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .restaurants__card__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px;
+        h3 {
+          font-size: 18px;
+          font-family: roboto, sans-serif;
+          font-weight: 700;
+          margin: 0;
+        }
+        p {
+          margin: 0;
+          font-size: 17px;
+          font-family: Roboto, sans-serif;
+          font-weight: 300;
+        }
+      }
+    }
+    .restaurants__card__content__heart {
+      position: absolute;
+      top: 225px;
+      right: 45px;
+    }
+    i {
+      position: absolute;
+      font-size: 1.3rem;
+    }
+    .fa-solid {
+      opacity: 0;
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+      transition: all 0.4s ease-in-out;
+      background-image: $button-background;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,5 +1,4 @@
 /******Animation du Loader de chargement************/
-
 .loader-container {
   display: flex;
   justify-content: center;
@@ -23,7 +22,6 @@
   border-radius: 100px;
   animation: rotateLoader 1s linear infinite;
 }
-
 @keyframes rotateLoader {
   0% {
     transform: rotate(0turn);
