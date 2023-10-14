@@ -72,7 +72,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 20px;
       font-family: roboto, sans-serif;
       background: $primary-background;
       border-radius: 20px;
@@ -93,9 +93,16 @@
       font-size: 0.9rem;
       font-family: "roboto";
     }
+    .container__icone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20px;
+      width: 15px;
+      margin-left: 30px;
+    }
     .fa-solid {
       font-weight: 900;
-      margin-left: 20px;
       &.fa-mobile-screen-button {
         color: #7e7e7e;
       }

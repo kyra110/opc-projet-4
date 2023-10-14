@@ -87,7 +87,7 @@ body {
   border-bottom: 10px solid #9356dc;
   border-left: 10px solid transparent;
   border-radius: 100px;
-  animation: rotateLoader 1s linear infinite;
+  animation: rotateLoader 1s linear;
 }
 
 @keyframes rotateLoader {
@@ -104,7 +104,7 @@ body {
   }
   100% {
     opacity: 0;
-    display: none;
+    z-index: -1;
   }
 }
 /*****animation card-box****/
@@ -210,6 +210,12 @@ header .header__gps-container {
   gap: 10px;
   background-color: #eaeaea;
   font-family: roboto, sans-serif;
+  border-top: 4px solid rgba(136, 136, 136, 0.1568627451);
+}
+@media screen and (min-width: 768px) {
+  header .header__gps-container {
+    border-top: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -517,7 +523,7 @@ header .header__gps-container {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   font-family: roboto, sans-serif;
   background: #f6f6f6;
   border-radius: 20px;
@@ -543,9 +549,16 @@ header .header__gps-container {
   font-size: 0.9rem;
   font-family: "roboto";
 }
+.fonctionnement .fonctionnement__choix-container .container__icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 15px;
+  margin-left: 30px;
+}
 .fonctionnement .fonctionnement__choix-container .fa-solid {
   font-weight: 900;
-  margin-left: 20px;
 }
 .fonctionnement .fonctionnement__choix-container .fa-solid.fa-mobile-screen-button {
   color: #7e7e7e;

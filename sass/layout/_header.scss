@@ -25,5 +25,9 @@ header {
     gap: 10px;
     background-color: $header-background;
     font-family: roboto, sans-serif;
+    border-top: 4px solid #88888828;
+    @media screen and (min-width: 768px) {
+      border-top: none;
+    }
   }
 }
