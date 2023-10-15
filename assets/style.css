@@ -197,6 +197,13 @@ header .header__logo {
   display: flex;
   justify-content: center;
   padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  header .header__logo {
+    box-shadow: none;
+  }
 }
 header .header__logo img {
   width: 200px;
@@ -210,7 +217,6 @@ header .header__gps-container {
   gap: 10px;
   background-color: #eaeaea;
   font-family: roboto, sans-serif;
-  border-top: 4px solid rgba(136, 136, 136, 0.1568627451);
 }
 @media screen and (min-width: 768px) {
   header .header__gps-container {

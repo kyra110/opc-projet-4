@@ -13,6 +13,11 @@ header {
   .header__logo {
     @include flex-center();
     padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    @media screen and (min-width: 768px) {
+      box-shadow: none;
+    }
     img {
       width: 200px;
       height: 40px;
@@ -25,7 +30,7 @@ header {
     gap: 10px;
     background-color: $header-background;
     font-family: roboto, sans-serif;
-    border-top: 4px solid #88888828;
+    // border-top: 4px solid #88888828;
     @media screen and (min-width: 768px) {
       border-top: none;
     }
