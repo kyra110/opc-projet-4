@@ -13,12 +13,12 @@
   animation: fadeOut 1s linear 1s forwards;
 }
 .loader {
-  height: 100px;
-  width: 100px;
-  border-top: 10px solid #9356dc;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #9356dc;
-  border-left: 10px solid transparent;
+  height: 150px;
+  width: 150px;
+  border-top: 8px solid #9356dc;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #9356dc;
+  border-left: 8px solid transparent;
   border-radius: 100px;
   animation: rotateLoader 1s linear infinite;
 }
