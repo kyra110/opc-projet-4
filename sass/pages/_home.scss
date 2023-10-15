@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    @media screen and (min-width: 1050px) {
+    @media screen and (min-width: 1024px) {
       display: grid;
       gap: 15px 50px;
       grid-template-columns: repeat(3, 25%);
@@ -68,6 +68,9 @@
     .fonctionnement__choix-container__composant {
       @media screen and (min-width: 768px) {
         width: 100%;
+        h3 {
+          font-size: 1rem;
+        }
       }
       position: relative;
       display: flex;

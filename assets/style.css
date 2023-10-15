@@ -500,7 +500,7 @@ header .header__gps-container {
   flex-direction: column;
   gap: 15px;
 }
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1024px) {
   .fonctionnement .fonctionnement__choix-container {
     display: grid;
     gap: 15px 50px;
@@ -538,6 +538,9 @@ header .header__gps-container {
 @media screen and (min-width: 768px) {
   .fonctionnement .fonctionnement__choix-container .fonctionnement__choix-container__composant {
     width: 100%;
+  }
+  .fonctionnement .fonctionnement__choix-container .fonctionnement__choix-container__composant h3 {
+    font-size: 1rem;
   }
 }
 .fonctionnement .fonctionnement__choix-container span {
