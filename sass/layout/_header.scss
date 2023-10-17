@@ -30,7 +30,15 @@ header {
     gap: 10px;
     background-color: $header-background;
     font-family: roboto, sans-serif;
-    // border-top: 4px solid #88888828;
+    height: 60px;
+    input {
+      border: none;
+      padding: 5px;
+      font-size: 1rem;
+      background-color: $header-background;
+      font-weight: bold;
+      width: 130px;
+    }
     @media screen and (min-width: 768px) {
       border-top: none;
     }

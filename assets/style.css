@@ -217,6 +217,15 @@ header .header__gps-container {
   gap: 10px;
   background-color: #eaeaea;
   font-family: roboto, sans-serif;
+  height: 60px;
+}
+header .header__gps-container input {
+  border: none;
+  padding: 5px;
+  font-size: 1rem;
+  background-color: #eaeaea;
+  font-weight: bold;
+  width: 130px;
 }
 @media screen and (min-width: 768px) {
   header .header__gps-container {
@@ -550,7 +559,7 @@ header .header__gps-container {
   width: 24px;
   background: #9356dc;
   border-radius: 200px;
-  color: #f6f6f6;
+  color: white;
   justify-content: center;
   align-items: center;
   font-size: 0.9rem;
