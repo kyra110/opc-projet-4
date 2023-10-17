@@ -39,6 +39,9 @@ header {
       font-weight: bold;
       width: 130px;
     }
+    .label-content {
+      font-size: 0;
+    }
     @media screen and (min-width: 768px) {
       border-top: none;
     }

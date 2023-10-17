@@ -227,6 +227,9 @@ header .header__gps-container input {
   font-weight: bold;
   width: 130px;
 }
+header .header__gps-container .label-content {
+  font-size: 0;
+}
 @media screen and (min-width: 768px) {
   header .header__gps-container {
     border-top: none;
