@@ -219,6 +219,9 @@ header .header__gps-container {
   font-family: roboto, sans-serif;
   height: 60px;
 }
+header .header__gps-container .fa-location-dot {
+  font-size: larger;
+}
 header .header__gps-container input {
   border: none;
   padding: 5px;
@@ -226,6 +229,10 @@ header .header__gps-container input {
   background-color: #eaeaea;
   font-weight: bold;
   width: 130px;
+}
+header .header__gps-container input:focus {
+  outline: 3px solid #9356dc;
+  border-radius: 5px;
 }
 header .header__gps-container .label-content {
   font-size: 0;
@@ -286,6 +293,7 @@ header .header__gps-container .label-content {
   }
 }
 .accueil-restaurant-titre i {
+  cursor: pointer;
   position: absolute;
   top: 27px;
   right: 35px;
@@ -677,6 +685,7 @@ header .header__gps-container .label-content {
 .restaurants .restaurants__card i {
   position: absolute;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 .restaurants .restaurants__card .fa-solid {
   opacity: 0;
